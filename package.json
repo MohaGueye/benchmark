@@ -1,0 +1,16 @@
+{
+  "name": "benchmark-frameworks",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:react": "npm run dev --prefix apps/react-benchmark",
+    "dev:angular": "npm run start --prefix apps/angular-benchmark",
+    "dev:vue": "npm run dev --prefix apps/vue-benchmark",
+    "dev:svelte": "npm run dev --prefix apps/svelte-benchmark",
+    "start:all": "bash scripts/run-all.sh",
+    "collect:results": "node scripts/collect-results.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
